@@ -1,24 +1,24 @@
-# デザインレポート作成用テンプレート
+# デザインレポート作成用latexテンプレート
 使用は自由です。好きに使ってください。
 
 ## ファイル構造
-ファイルはグループ編集しやすいよう、班ごとに分割してあります。  
-ディレクトリ構成図は以下の通り  
+ファイルはグループ編集しやすいよう、班ごとに分割してあります。同じファイルを同時に編集しない限り、複数人で同時編集が可能です。  
+ディレクトリ構成図は以下の通りです。  
 
 ```
 FSAEdesign-temp/
-　├ figure/
+　├ figure/　　  <== 図表用
 　│　├ fig1.eps
 　│　├ fig2.eps
 　│　├ ...
 　│　
-　├ subfiles/
+　├ subfiles/　　<== 各班の本文
 　│　├ body/
 　│　│　├ aero/
 　│　│　│　└ aero.tex
 　│　│　├ frame/
 　│　│　│　└ frame.tex
-　│　│　└ merge.tex
+　│　│　└ merge.tex　　<== ボディ班の文書をまとめるファイル
 　│　│
 　│　├ concept/
 　│　│　└ concept.tex
@@ -36,7 +36,7 @@ FSAEdesign-temp/
 　│　│　│　└ steering.tex
 　│　│　├ throttle/
 　│　│　│　└ throrrle.tex
-　│　│　└ merge.tex
+　│　│　└ merge.tex　　<== エルゴノミクス班の文書をまとめるファイル
 　│　│
 　│　├ intro/
 　│　│　└ intro.tex
@@ -54,7 +54,7 @@ FSAEdesign-temp/
 　│　│　│　└ intake.tex
 　│　│　├ radiator/
 　│　│　│　└ radiator.tex
-　│　│　└ merge.tex
+　│　│　└ merge.tex　　<== パワートレイン班の文書をまとめるファイル
 　│　│
 　│　├ suspension/
 　│　│　├ hubs/
@@ -63,10 +63,12 @@ FSAEdesign-temp/
 　│　│　│　└ suspension.tex
 　│　│　├ uplights/
 　│　│　│　└ uplights.tex
-　│　│　└ merge.tex
-　│　└ three_views/
+　│　│　└ merge.tex/   <== サスペンション班の文書をまとめるファイル
+　│　│
+　│　└ three_views/     <== 三面図用ディレクトリ
 　│　
-　├ master.tex
-　├ README.md
-　└ .gitignore
+　├ master.tex　　<== 各班のmerge.texをまとめるファイル
+　│　
+　├ README.md    <== 関係ないです
+　└ .gitignore   <== 関係ないです
 ```
