@@ -55,4 +55,5 @@ Temporary Items
 *.fdb_latexmk
 *.fls
 *.log
+*.pdf
 *.synctex.gz

@@ -54,37 +54,31 @@
 %\pagestyle{empty} % すべてのページ番号を消去
 
 \begin{document}
+
 %文字サイズ
 %\scriptsize   %7pt
 \footnotesize %8pt
 %\small        %9pt
 
-\markright{第 16 回全日本学生フォーミュラ大会 Car No.029 九州工業大学デザインレポート}
-%%\multicolumn{1}{|c|}{\includegraphics[width=10mm]{figure/eps/Logo.eps}}
 
-%% \markleft{
-%%   \includegraphics[width=10mm]{figure/eps/Logo.eps}
-%% }
+%% <------------------------------タイトル------------------------------>
+
+\markright{第  回全日本学生フォーミュラ大会 Car No.000 **大学デザインレポート}
 
 \date{\vspace{-15mm}}
-\title{\vspace{-18mm} \small Car No.029 Kyushu Institute of Technology KIT-formula Design Report}
+\title{\vspace{-18mm} \small Car No.000 [team name] Design Report}
 
 \oddsidemargin = -15mm
 \maketitle % 実際の表題の出力
 \thispagestyle{empty}
-%\tableofcontents
 
-%タイトル
-%% \begin{center}
-%%   {ji}
-%% \end{center}
+%% <------------------------------　本文　------------------------------>
 
-
-%\newpage
 %イントロ
 \input{subfiles/intro/intro.tex}
 
-\begin{multicols}{2}
+\begin{multicols}{2} %%2列スタイル化
+  
 %コンセプト
 \input{subfiles/concept/concept.tex}
 
@@ -103,287 +97,281 @@
 %参考文献
 \begin{thebibliography}{99}
   \addcontentsline{toc}{section}{参考文献}
-\bibitem{NACA} NATIONAL ADVISORY COMMITTEE FOR AERONAUTICS，"AERODYNAMIC CHARACTERISTICS OF AIRFOILS-IV"，p.196，1926．
+\bibitem{[label name]} [author]，"[title]"，p.[page]，[year]．
+\bibitem{[label name]} [author]，"[title]"，p.[page]，[year]．
+%% \bibitem{[label name]} [author]，"[title]"，p.[page]，[year]．
+%% \bibitem{[label name]} [author]，"[title]"，p.[page]，[year]．
 \end{thebibliography}
 
 \end{multicols}
 
 
+%% <------------------------------　図表　------------------------------>
+
 \clearpage
-%図
 \begin{figure}[H]
   \begin{tabular}{cccc}
+    
     \begin{minipage}{0.24\hsize}
       \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/susp/graph1.eps}
-        \caption{エンデュランスとスキッドパッドの相関図}
-        \label{fig:sus1}
+        \includegraphics[clip,width=3.5cm]{figure/fig1.eps}
+        \caption{title}
+        \label{fig:label1}
       \end{center}
     \end{minipage}
     
     \begin{minipage}{0.24\hsize}
       \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/susp/graph2.eps}
-        \caption{車両重量のスキッドパッドへの影響}
-        \label{fig:sus2}
+        \includegraphics[clip,width=3.5cm]{figure/fig2.eps}
+        \caption{title}
+        \label{fig:label2}
       \end{center}
     \end{minipage}
     
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-      \includegraphics[clip,width=3.5cm]{figure/susp/graph3.eps}
-      \caption{ダウンフォースのスキッドパッドへの影響}
-      \label{fig:sus3}
-      \end{center}
-    \end{minipage}
-    
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/susp/graph4.eps}
-        \caption{トレッドのスキッドパッドへの影響}
-        \label{fig:sus4}
-      \end{center}
-    \end{minipage}
-  \end{tabular}
-\end{figure}  
-
-\begin{figure}[H]
-  \begin{tabular}{cccc}
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/susp/graph5.eps}
-        \caption{軽量化とDF目標}
-        \label{fig:sus5}
-      \end{center}
-    \end{minipage}
-    
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/susp/graph6.eps}
-        \caption{各校のホイールベースとタイム}
-        \label{fig:sus6}
-      \end{center}
-    \end{minipage}
-
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/susp/graphA.eps}
-        \caption{旋回外輪側キャンバーチェンジ}
-        \label{fig:susA}
-      \end{center}
-    \end{minipage}
-
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/susp/graphB.eps}
-        \caption{旋回外輪側トーチェンジ}
-        \label{fig:susB}
-      \end{center}
-    \end{minipage}
-  \end{tabular}
-\end{figure}  
-
-\begin{figure}[H]
-  \begin{tabular}{cccc}
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/susp/graphC.eps}
-        \caption{スカッフ変化}
-        \label{fig:susC}
-      \end{center}
-    \end{minipage}
-
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/susp/graphD.eps}
-        \caption{重心高低下によるタイムへの影響}
-        \label{fig:susD}
-      \end{center}
-    \end{minipage}
-
     %% \begin{minipage}{0.24\hsize}
     %%   \begin{center}
-    %%     \includegraphics[clip,width=3.5cm]{figure/uplight/graph1.eps}
-    %%     \caption{ナット緩み防止溝加工図}
-    %%     \label{fig:uplight1}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig3.eps}
+    %%     \caption{title}
+    %%     \label{fig:label3}
     %%   \end{center}
     %% \end{minipage}
     
     %% \begin{minipage}{0.24\hsize}
     %%   \begin{center}
-    %%     \includegraphics[clip,width=3.5cm]{figure/uplight/graph2.eps}
-    %%     \caption{トラクションコントロールセンサステー}
-    %%     \label{fig:uplight2}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig4.eps}
+    %%     \caption{title}
+    %%     \label{fig:label4}
     %%   \end{center}
     %% \end{minipage}
-
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/frame/graph1.eps}
-        \caption{横Gと右側後輪のダンパーのストローク量}
-        \label{fig:frame1}
-      \end{center}
-    \end{minipage}
-
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/aero/pontoon.eps}
-        \caption{サイドポンツーン周辺の空気の流れ}
-        \label{fig:pontoon}
-      \end{center}
-    \end{minipage}
-  \end{tabular}
-\end{figure}  
-
-\begin{figure}[H]
-  \begin{tabular}{cccc}    
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/aero/angle_data.eps}
-        \caption{迎角変化によるパラメータの変化}
-        \label{fig:angle_data}
-      \end{center}
-    \end{minipage}
     
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/aero/naca97-deg20.eps}
-        \caption{迎角20degのときの乱流エネルギー}
-        \label{fig:naca97_deg20}
-      \end{center}
-    \end{minipage}
-
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/aero/naca97-deg15-15-15.eps}
-        \caption{スリットを設けたときの乱流エネルギー}
-        \label{fig:naca97_151515}
-      \end{center}
-    \end{minipage}
-
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/aero/straight.eps}
-        \caption{タフト法(アクセラレーション)}
-        \label{fig:taft_acc}
-      \end{center}
-    \end{minipage}
-  \end{tabular}
-\end{figure}  
-
-\begin{figure}[H]
-  \begin{tabular}{cccc}      
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/aero/turn.eps}
-        \caption{タフト法(スキッドパッド)}
-        \label{fig:taft_skid}
-      \end{center}
-    \end{minipage}
-
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/powertrain_exhast/graph1.eps}
-        \caption{バルブタイミング変更による影響}
-        \label{fig:power1}
-      \end{center}
-    \end{minipage}
-
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/intake/graph1.eps}
-        \caption{バタフライ径変更による吸気流量の比較}
-        \label{fig:intake1}
-      \end{center}
-    \end{minipage}
-
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/intake/graph2.eps}
-        \caption{吸気変更によるエンジン性能の比較}
-        \label{fig:intake2}
-      \end{center}
-    \end{minipage}
   \end{tabular}
 \end{figure}  
 
 \begin{figure}[H]
   \begin{tabular}{cccc}
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/intake/graph3.eps}
-        \caption{各気筒の吸気流量}
-        \label{fig:intake3}
-      \end{center}
-    \end{minipage}
-
+    
     %% \begin{minipage}{0.24\hsize}
     %%   \begin{center}
-    %%     \includegraphics[clip,width=3.5cm]{figure/powertrain_exhast/graph2.eps}
-    %%     \caption{排気管集合部の一体化}
-    %%     \label{fig:power2}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig5.eps}
+    %%     \caption{title}
+    %%     \label{fig:label5}
     %%   \end{center}
     %% \end{minipage}
-
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/powertrain_exhast/graph3.eps}
-        \caption{4つのA/Fセンサマウント}
-        \label{fig:power3}
-      \end{center}
-    \end{minipage}
- 
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/powertrain_exhast/graph4.eps}
-        \caption{排気変更による特性の比較}
-        \label{fig:power4}
-      \end{center}
-    \end{minipage}
-
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/powertrain_exhast/graph5.eps}
-        \caption{チャンバー有無での騒音の比較}
-        \label{fig:power5}
-      \end{center}
-    \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig6.eps}
+    %%     \caption{title}
+    %%     \label{fig:label6}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig7.eps}
+    %%     \caption{title}
+    %%     \label{fig:label7}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig8.eps}
+    %%     \caption{title}
+    %%     \label{fig:label8}
+    %%   \end{center}
+    %% \end{minipage}
+    
   \end{tabular}
 \end{figure}  
 
 \begin{figure}[H]
   \begin{tabular}{cccc}
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/powertrain_exhast/graph6.eps}
-        \caption{サイレンサエンド部の長さ比較}
-        \label{fig:power6}
-      \end{center}
-    \end{minipage}
-
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/radiator/graph1.eps}
-        \caption{Radiator Layout\newline 上：KS-14，下：KS-15}
-        \label{fig:radiator1}
-      \end{center}
-    \end{minipage}
     
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/fuel/graph1.eps}
-        \caption{バッフルプレート\newline (該当箇所は色がついた部分)}
-        \label{fig:fuel1}
-      \end{center}
-    \end{minipage}
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig9.eps}
+    %%     \caption{title}
+    %%     \label{fig:label9}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig10.eps}
+    %%     \caption{title}
+    %%     \label{fig:label10}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig11.eps}
+    %%     \caption{title}
+    %%     \label{fig:label11}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig12.eps}
+    %%     \caption{title}
+    %%     \label{fig:label12}
+    %%   \end{center}
+    %% \end{minipage}
+    
+  \end{tabular}
+\end{figure}  
 
-    \begin{minipage}{0.24\hsize}
-      \begin{center}
-        \includegraphics[clip,width=3.5cm]{figure/fuel/graph2.eps}
-        \caption{ANSYSによる解析結果}
-        \label{fig:fuel2}
-      \end{center}
-    \end{minipage}
+\begin{figure}[H]
+  \begin{tabular}{cccc}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig13.eps}
+    %%     \caption{title}
+    %%     \label{fig:label13}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig14.eps}
+    %%     \caption{title}
+    %%     \label{fig:label14}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig15.eps}
+    %%     \caption{title}
+    %%     \label{fig:label15}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig6.eps}
+    %%     \caption{title}
+    %%     \label{fig:label16}
+    %%   \end{center}
+    %% \end{minipage}
+    
+  \end{tabular}
+\end{figure}  
+
+\begin{figure}[H]
+  \begin{tabular}{cccc}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig17.eps}
+    %%     \caption{title}
+    %%     \label{fig:label17}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig18.eps}
+    %%     \caption{title}
+    %%     \label{fig:label18}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig19.eps}
+    %%     \caption{title}
+    %%     \label{fig:label19}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig20.eps}
+    %%     \caption{title}
+    %%     \label{fig:label20}
+    %%   \end{center}
+    %% \end{minipage}
+    
+  \end{tabular}
+\end{figure}  
+
+\begin{figure}[H]
+  \begin{tabular}{cccc}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig21.eps}
+    %%     \caption{title}
+    %%     \label{fig:label21}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig22.eps}
+    %%     \caption{title}
+    %%     \label{fig:label22}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig23.eps}
+    %%     \caption{title}
+    %%     \label{fig:label23}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig24.eps}
+    %%     \caption{title}
+    %%     \label{fig:label24}
+    %%   \end{center}
+    %% \end{minipage}
+    
+  \end{tabular}
+\end{figure}  
+
+\begin{figure}[H]
+  \begin{tabular}{cccc}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig25.eps}
+    %%     \caption{title}
+    %%     \label{fig:label25}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig26.eps}
+    %%     \caption{title}
+    %%     \label{fig:label26}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig27.eps}
+    %%     \caption{title}
+    %%     \label{fig:label27}
+    %%   \end{center}
+    %% \end{minipage}
+    
+    %% \begin{minipage}{0.24\hsize}
+    %%   \begin{center}
+    %%     \includegraphics[clip,width=3.5cm]{figure/fig28.eps}
+    %%     \caption{title}
+    %%     \label{fig:label28}
+    %%   \end{center}
+    %% \end{minipage}
+    
   \end{tabular}
 \end{figure}
 
