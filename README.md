@@ -1,6 +1,19 @@
 # デザインレポート作成用latexテンプレート
 使用は自由です。好きに使ってください。
 
+## Texの作業環境インストール
+- windows : [TeXworks](https://texwiki.texjp.org/?TeXworks#t28a6277)  
+- linux : [latexmk](https://qiita.com/hinagishi/items/6515be303ba9b4fd37b5)
+```
+sudo apt install texlive-full
+```
+コンパイル環境
+```
+sudo apt install latexmk
+```
+
+
+
 ## ファイル構造
 ファイルはグループ編集しやすいよう、班ごとに分割してあります。同じファイルを同時に編集しない限り、複数人で同時編集が可能です。  
 ディレクトリ構成図は以下の通りです。  
