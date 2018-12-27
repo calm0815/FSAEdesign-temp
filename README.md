@@ -3,11 +3,11 @@
 
 ## Texの作業環境インストール
 - windows : [WindowsでLaTeXを始めるための基礎知識](https://qiita.com/puripuri2100/items/8fa3fde911948fd1e504)  
-- linux : [latexmk](https://qiita.com/hinagishi/items/6515be303ba9b4fd37b5)
+- linux : [UbuntuにTeX環境をインストールするための覚書](https://qiita.com/kentarosasaki/items/358134a1092864ff7625)
 ```
 sudo apt install texlive-full
 ```
-コンパイル環境
+コンパイル環境 : [latexmk つかって LaTeX コンパイルしたら簡単すぎて身長が10cm伸びた](http://d.hatena.ne.jp/yambi/20091117/1258452926)
 ```
 sudo apt install latexmk
 ```
