@@ -2,7 +2,7 @@
 使用は自由です。好きに使ってください。
 
 ## Texの作業環境インストール
-- windows : [TeXworks](https://texwiki.texjp.org/?TeXworks#t28a6277)  
+- windows : [WindowsでLaTeXを始めるための基礎知識](https://qiita.com/puripuri2100/items/8fa3fde911948fd1e504)  
 - linux : [latexmk](https://qiita.com/hinagishi/items/6515be303ba9b4fd37b5)
 ```
 sudo apt install texlive-full
